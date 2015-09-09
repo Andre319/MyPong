@@ -20,7 +20,6 @@
 *.lai
 *.la
 *.a
-*.lib
 
 # Executables
 *.exe
@@ -73,3 +72,5 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+*.sdf
