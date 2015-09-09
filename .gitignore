@@ -73,4 +73,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+
 *.sdf
+*.opensdf
+Debug
