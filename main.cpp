@@ -22,6 +22,7 @@ void main()
 	sfw::initContext(SCREEN_WIDTH, SCREEN_HEIGHT, "Pong");
 
 	Player one = { 10, SCREEN_HEIGHT/2, 40, 300 };
+	Player two = {SCREEN_WIDTH-10, SCREEN_HEIGHT/2, 40, 300 };
 
 	while (sfw::stepContext())
 	{
@@ -33,39 +34,49 @@ void main()
 			float foo = sfw::getDeltaTime();
 			one.y += one.speed * foo;
 		}
-		
 
-		drawPlayer(one);
-	}
-
-	sfw::termContext();
-}
-
-void drawPlayer(Player p)
-{
-	sfw::drawLine(p.x, p.y, p.x, p.y + p.width);
-
-	sfw::initContext(SCREEN_WIDTH, SCREEN_HEIGHT, "Pong");
-
-	Player two = { -10, SCREEN_HEIGHT / 2, 40, 300 };
-
-	while (sfw::stepContext())
-	{
-		if (sfw::getKey('8')) {
+		if (sfw::getKey('i')) {
 			float foo = sfw::getDeltaTime();
 			two.y -= two.speed * foo;
 		}
-		if (sfw::getKey('2')) {
+		if (sfw::getKey('k')) {
 			float foo = sfw::getDeltaTime();
 			two.y += two.speed * foo;
 		}
 
 
+		drawPlayer(one);
 		drawPlayer(two);
 	}
 
 	sfw::termContext();
 }
+
+//void drawPlayer(Player p)
+//{
+//	sfw::drawLine(p.x, p.y, p.x, p.y + p.width);
+//
+//	//sfw::initContext(SCREEN_WIDTH, SCREEN_HEIGHT, "Pong");
+//
+//	//Player two = { -10, SCREEN_HEIGHT / 2, 40, 300 };
+//
+//	//while (sfw::stepContext())
+//	//{
+//	//	if (sfw::getKey('8')) {
+//	//		float foo = sfw::getDeltaTime();
+//	//		two.y -= two.speed * foo;
+//	//	}
+//	//	if (sfw::getKey('2')) {
+//	//		float foo = sfw::getDeltaTime();
+//	//		two.y += two.speed * foo;
+//	//	}
+//
+//
+//	//	drawPlayer(two);
+//	//}
+//
+//	//sfw::termContext();
+//}
 
 
 
