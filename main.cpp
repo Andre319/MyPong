@@ -1,6 +1,7 @@
 #pragma once
 #include "sfwdraw.h"
 #include <iostream>
+using std::cout;
 
 const int SCREEN_WIDTH = 800;
 const int SCREEN_HEIGHT = 600;
@@ -89,22 +90,29 @@ void main()
 			one.y = 0;
 		else if (one.y + one.width > SCREEN_HEIGHT)
 			one.y = SCREEN_HEIGHT - one.width;
-		
+		 /// hit left wall
+		if (ball.xpos < 0) {
+			
+			ball.xpos = SCREEN_WIDTH / 2;
+			ball.ypos = SCREEN_HEIGHT / 2;
+			ball.xacc = (ball.xacc);
+				ball.yacc = 0;
+		}
+		/// hit right wall
+		if (ball.xpos > SCREEN_WIDTH) {
+
+			ball.xpos = SCREEN_WIDTH / 2;
+			ball.ypos = SCREEN_HEIGHT / 2;
+			ball.xacc = (ball.xacc);
+			ball.yacc = 0;
+		}
 		/////////////// right paddle//////////
 
 		if (two.y < 0)
 			two.y = 0;
 		else if (two.y + two.width > SCREEN_HEIGHT)
 			two.y = SCREEN_HEIGHT - two.width;
-    //////////////// Reset the position of the ball///////////		
-		
-		
-			
-		
-		
-		
-		
-		
+    		
 		//std::cout << "Ball Pos: " << ball.xpos << "," << ball.ypos << std::endl;
 
 		drawCircle(ball);
@@ -114,8 +122,6 @@ void main()
 
 	sfw::termContext();
 }
-
-
 
 
 

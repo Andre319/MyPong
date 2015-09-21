@@ -1,0 +1,26 @@
+Brief description of the goals and results of the project.
+
+• Major challenges faced while meeting requirements.
+
+-The major challenges i faced with this project was getting started on the program and trying to understand what does what in the c++ program.
+
+
+• Triumphs and things you did well.
+
+-Finding good resources to help me slowly figure out what to do and how to solve certain ploblems. ex. github, cplusplus.com ect..
+
+
+• Failures that resulted in outside help of some kind.
+
+- As i have mentioned before i had trouble getting started on the project, and how to structure it.  
+
+
+• Discuss external tools and help received.
+
+- I used sites like github, cplusplus.com on whatever free time i had, i also had alot of help from my classmates Matt, Andrew, Jacob, and Terry throught the entire project.
+
+
+• Future growth opportunities and goals.
+
+- Understanding c++ ALOT better, i felt that i was struggling so much with every single bit of this project. And i need to become a lot more competent with this program.
+ 
